@@ -1,0 +1,22 @@
+{
+  "id": "lenso.search-index@1",
+  "version": "1.0.0",
+  "portable": true,
+  "cross_lane_transfer": true,
+  "operations": [
+    {
+      "name": "upsert_document",
+      "interaction": "request",
+      "request_schema": "schemas/upsert-document-request.schema.json",
+      "response_schema": "schemas/upsert-document-response.schema.json",
+      "domain_error_schema": "schemas/upsert-document-error.schema.json"
+    },
+    {
+      "name": "delete_document",
+      "interaction": "request",
+      "request_schema": "schemas/delete-document-request.schema.json",
+      "response_schema": "schemas/delete-document-response.schema.json",
+      "domain_error_schema": "schemas/delete-document-error.schema.json"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["changed", "index_revision"],
+  "properties": {
+    "changed": {
+      "type": "boolean"
+    },
+    "index_revision": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false,
+  "title": "DeleteDocumentResponse"
+}

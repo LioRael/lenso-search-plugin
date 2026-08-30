@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["references", "index_revision"],
+  "properties": {
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/SearchResponseReferencesItem"
+      }
+    },
+    "index_revision": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "SearchResponseReferencesItem": {
+      "type": "object",
+      "required": ["source_kind", "source_id"],
+      "properties": {
+        "source_kind": {
+          "type": "string"
+        },
+        "source_id": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "title": "SearchResponse"
+}
