@@ -1,0 +1,15 @@
+{
+  "id": "lenso.search@1",
+  "version": "1.0.0",
+  "portable": true,
+  "cross_lane_transfer": true,
+  "operations": [
+    {
+      "name": "query_references",
+      "interaction": "request",
+      "request_schema": "schemas/query-references-request.schema.json",
+      "response_schema": "schemas/query-references-response.schema.json",
+      "domain_error_schema": "schemas/query-references-error.schema.json"
+    }
+  ]
+}

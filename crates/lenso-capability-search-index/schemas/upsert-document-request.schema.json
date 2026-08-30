@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["scope_kind", "scope_id", "source_kind", "source_id", "search_text"],
+  "properties": {
+    "scope_kind": {
+      "type": "string"
+    },
+    "scope_id": {
+      "type": "string"
+    },
+    "source_kind": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "search_text": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "title": "UpsertDocumentRequest"
+}
