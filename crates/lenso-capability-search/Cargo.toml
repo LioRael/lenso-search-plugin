@@ -6,7 +6,11 @@ license.workspace = true
 publish = false
 repository.workspace = true
 description = "Opaque reference Search Capability for Lenso vNext."
-build = "build.rs"
+
+[package.metadata.lenso.contract]
+descriptor = "capability.json"
+projection = "rust"
+output = "src/generated.rs"
 
 [dependencies]
 futures = "0.3"
@@ -14,13 +18,6 @@ lenso-contract-authoring.workspace = true
 lenso-contract-runtime.workspace = true
 lenso-kernel.workspace = true
 lenso-plugin-authoring.workspace = true
-schemars.workspace = true
-serde.workspace = true
-serde_json.workspace = true
-
-[build-dependencies]
-lenso-contract-authoring.workspace = true
-lenso-contract-codegen.workspace = true
 schemars.workspace = true
 serde.workspace = true
 serde_json.workspace = true

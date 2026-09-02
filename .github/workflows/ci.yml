@@ -33,5 +33,8 @@ jobs:
           components: rustfmt,clippy
       - run: cargo fmt --all -- --check
       - run: cargo check --locked --workspace --all-targets
+      - name: Install exact contract projection checker
+        run: cargo install --locked --version '=0.6.5' lenso-contract-codegen
+      - run: lenso-contract-codegen workspace check --manifest-path Cargo.toml
       - run: cargo test --locked --workspace -- --include-ignored --test-threads=1
       - run: cargo clippy --locked --workspace --all-targets -- -D warnings
