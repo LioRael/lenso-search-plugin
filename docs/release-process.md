@@ -2,7 +2,8 @@
 
 Only `lenso-capability-search` and `lenso-capability-search-index` are public
 registry packages. The PostgreSQL implementation remains private to this
-repository.
+repository. The linked Agent Tool adapter is also private and is not part of
+the registry release set.
 
 Publication is manual-only from reviewed `main` through
 `.github/workflows/release-plz.yml`. Repository pushes do not run release

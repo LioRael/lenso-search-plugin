@@ -1,0 +1,25 @@
+[package]
+name = "lenso-search-agent-tools-plugin"
+version = "0.1.0"
+description = "Reference-only Agent Tool adapter for Lenso Search."
+edition.workspace = true
+license.workspace = true
+publish = false
+repository.workspace = true
+rust-version.workspace = true
+
+[package.metadata.lenso]
+plugin-id = "lenso.search.agent-tools"
+root-slot = "tool-providers"
+
+[dependencies]
+futures.workspace = true
+lenso.workspace = true
+lenso-capability-agent-tool-provider.workspace = true
+lenso-capability-search = { version = "0.1.0", path = "../lenso-capability-search" }
+lenso-kernel.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true
