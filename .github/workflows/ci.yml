@@ -38,3 +38,7 @@ jobs:
       - run: lenso-contract-codegen workspace check --manifest-path Cargo.toml
       - run: cargo test --locked --workspace -- --include-ignored --test-threads=1
       - run: cargo clippy --locked --workspace --all-targets -- -D warnings
+      - name: Package public Capability crates
+        run: |
+          cargo package --locked -p lenso-capability-search
+          cargo package --locked -p lenso-capability-search-index
