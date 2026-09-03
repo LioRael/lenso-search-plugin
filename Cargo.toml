@@ -3,6 +3,7 @@ resolver = "2"
 members = [
     "crates/lenso-capability-search",
     "crates/lenso-capability-search-index",
+    "crates/lenso-search-agent-tools-plugin",
     "crates/lenso-search-postgres-plugin",
 ]
 
@@ -13,7 +14,9 @@ repository = "https://github.com/LioRael/lenso-search-plugin"
 rust-version = "1.94"
 
 [workspace.dependencies]
+futures = "0.3"
 lenso = "0.5.0"
+lenso-capability-agent-tool-provider = "0.1.0"
 lenso-capability-secrets = "0.1.2"
 lenso-contract-authoring = "0.1.1"
 lenso-contract-runtime = "0.1.3"
